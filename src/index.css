@@ -1,0 +1,67 @@
+main {
+    min-height: 80vh;
+}
+
+h1 {
+    padding: 10px;
+}
+
+.carousel-item.next,
+.carousel-item.prev,
+.carousel-item.active {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0;
+}
+
+.carousel img {
+    box-sizing: border-box;
+    height: 400px;
+    margin: 40px;
+    padding: 30px;
+}
+
+.carousel-caption h2 {
+    color: white;
+}
+
+.carousel a {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .carousel img {
+        margin: 0;
+        padding: 20;
+        height: 350px;
+    }
+
+    .carousel-caption h2 {
+        color: black;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 489px) {
+    .carousel img {
+        margin: 0;
+        padding: 0;
+        height: 350px;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'><path d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/></svg>") !important;
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'><path d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/></svg>") !important;
+    }
+    .carousel-caption h2 {
+        color: black;
+        display: none;
+    }
+}
